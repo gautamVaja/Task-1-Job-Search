@@ -1,0 +1,59 @@
+<!-- 
+Create an mobile application using react-native/flutter framework 
+1. Fetch the data from the api - https://api.randomuser.me/ 
+2. Create an filter form in app (filters like gender, age, country) 
+3. Display the data in the app, by matching the filter values  
+** I am showing 10 values in one page
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="prev">
+        <div id="take">
+            <select name="liGen" id="liGen" class='li'>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <span id="ageGroup">
+                <h3 class="li">Select Age Group</h3>
+                <select name="ageg" id="ageg" class="li">
+                    <option value="0">0-10</option>
+                    <option value="10">11-20</option>
+                    <option value="20">21-30</option>
+                    <option value="30">31-40</option>
+                    <option value="40">41-50</option>
+                    <option value="50">51-60</option>
+                    <option value="60">61-70</option>
+                    <option value="70">71-80</option>
+                    <option value="80">81-90</option>
+                    <option value="90">91-100</option>
+                </select>
+            </span>
+        </div>
+        <!-- <input type="text" name="age" id="age"> -->
+        <br>
+        <button id="fe">Fetch</button>
+    </div>
+    <div id="sec">
+        <div id="heading">
+            <h2>Your data</h2>
+        </div>
+        <div id="data">
+        </div>
+    </div>
+</body>
+<script src="jquery-3.6.0.js"></script>
+<script src="script.js"></script>
+
+</html>
